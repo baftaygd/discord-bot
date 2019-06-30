@@ -1,0 +1,629 @@
+[
+  {
+    "title": "Blindspot",
+    "tools": [
+      "Godot",
+      "ffmpeg",
+      "audacity",
+      "[sox](http://sox.sourceforge.net/)"
+    ],
+    "authors": [
+      {
+        "name": "Nils André",
+        "age": 15,
+        "city": "Maidstone"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "Blindspot is a game for people with vision impairment as the player has only their sense of hearing to move around and win. This means that someone with vision impairment will not have any disadvantage compared to someone who can see correctly.",
+    "description": "In the game, you, the player has to reach the endpoint to finish a level. To do so the player will only have to use sound only like a visually impaired person. This means that someone with vision impairment will have the same change as someone without to win at this game.\n\nThis means to play, one will have to have headphone/earbuds since surround sound has to use them. To make it harder, there are also zombies and pits. Zombies will go toward you and if they hit you, you will die. Pits are structures to jump over. The first four levels are just to introduce some of the game concepts. while the last 6 levels are a mix of the previous concepts.\n\nMaking games, I had never made games before and learned to use the Godot Engine as well as all of the areas surrounding game making. I learned about 3D transformations, Navigation meshes, Doppler effect, Radians. 3D transformations were definitively the most challenging part as they do not seem natural at first.\n\n\nBecause of the way navigation meshes are built in Godot I have to reprocess the paths using some quite demanding math so here are the possibilities to fix this which can also be used at the same time:\n* use a better math equation (I know it is possible since I chose one of the equation on Wikipedia with square roots when what I want to do is possible without it)\n* use c++/c/rust. Godot supports these languages using GDNative instead of gdscript. These languages are probably a lot faster.\n* process navigation less. Currently, the navigation API is called each frame when this could be changed to something like each second or each half second.",
+    "winner": false
+  },
+  {
+    "title": "Green Launch",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "Abigail Tan",
+        "age": 16,
+        "city": "Brentwood"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "A challenging fast-paced action platformer where you use your 'Solar Launch' abilities in an alternate reality to overcome hazardous obstacles and discover how to save the environment.",
+    "description": "In Green Launch, the player runs a computer simulation that takes them into an alternate reality where the world has been devastated by the impacts that humans had on the environment. They have to overcome the challenges of the alternate world to find out what needs to be done to prevent the same thing happening to the real one.\n\nThe game's levels incorporate the settings and themes of acid rain, oil spills, and global warming in the form of melting ice caps and rising sea levels. The hazards that can kill the player relate to the setting of the level. The landscape of the 'alternate world' is devastated in comparison to the world as we know it; hazards threaten the player's existence constantly. Players will leap across giant acid lakes, evade dripping ice and spikes, race against time to stay above the rising seas, and more.\n\nThis was my first Unity game so I had to get to grips with how the engine worked, allowing me to gain experience utilising industry standard software. I also learnt to write code in C# as I had only used Scratch and Python before.\n\nMy game incorporates some mechanics that aren't commonly used in other games (such as the special jumps using the Solar Launch Pads). As a result, there were no comprehensive tutorials I could follow to code these jumps. Therefore I had to figure out my own solutions and use my knowledge of the code and game engine in order to get the mechanics to work. This made the coding aspect of development an invaluable opportunity to enhance my problem-solving skills.\n\nI also learnt a lot about game design and difficulty progression. As my game is intended as a challenging action platformer, it was important to get the difficulty curve right. I did some research and found that teaching the player a new skill, then testing them on it in later levels, was an important aspect to implement well in a platformer. Therefore I repeatedly tested the game to adjust the difficulty curve so that it would be optimally paced for the player and not be too frustrating.\n\nOverall, one of the most valuable lessons I learnt during the development of Green Launch was turning an idea into a working game prototype, and conveying the themes I wanted to get across. I wanted the game to teach the player about environmental issues in an interesting and accessible way. However, it can be difficult to incorporate a theme like this without taking the focus away from the main gameplay. Through making this game, I have learnt how to balance a focus on core gameplay with maintaining an important overarching theme throughout the game. The implementation of the environmental settings was a major part of this.\n\nI would add in more level sets themed around different environmental issues. For example, I would add levels about air pollution, plastic pollution in the oceans, and wildfires or droughts caused by global warming. In addition, I would add level sets that involved the player actually helping the environment. I'd also develop the mechanic of the Solar Launch Pads further, perhaps allowing the player to sprint under obstacles or teleport to alternate locations in the level. This would open up more gameplay possibilities without overloading the game with mechanics.",
+    "winner": false
+  },
+  {
+    "title": "Pop Pixie",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "Joe Anderson",
+        "age": 18,
+        "city": "Northampton"
+      },
+      {
+        "name": "Michael Bell",
+        "age": 18,
+        "city": "Northampton"
+      },
+      {
+        "name": "Miles Kneeshaw",
+        "age": 18,
+        "city": "Northampton"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "You can't judge a can by its label.",
+    "description": "In the game, you play as the Pop Pixie, who seems to have a gut feeling that something nefarious is going on in Mentoes Corp. He knows it is his responsibility to take down the Mentoes operation by infiltrating their headquarters, discovering its secrets and fighting through floor after floor of gremlins to get to the top and take down the evil Mentoes' Man.\n\nHowever, if the player decides to read the in-game lore items, they should be able to deduce that the Mentoes' Man isn't actually the bad guy and that the Pixie's actions have actually been a result of contaminated Pop clouding his ability to tell right from wrong.\n\nWorking as part of a larger team and collaborating with a large group of asset creators has helped us to understand some of the difficulties involved in organising a team. We have explored various productivity techniques, including setting ourselves deadlines that we encourage each other to stick to, as well as holding regular meetings where we showcase what each of us has been working on.\n\nJoe, our coder, had never used Unity or C# properly before starting work on Pop Pixie. Although even now, they claim not to know C#, this has been an excellent opportunity for them to experience a game engine that is slightly more reminiscent of those used by professional game studios.\n\nThere were many conflicting ideas on what the player sprite should look like, which delayed the inclusion of this sprite until just a few weeks before the deadline. Before we came to a decision on which idea to go with, we talked about what role the characters plays in the story: an archetypal vigilante with an unorthodox approach to justice, and how we could use their appearance to convey this. \n\nA few of the voice actors had difficulty reading the dialogue lines with confidence. We found that it helped to discuss real-world people who we could take inspiration for the voices from, so that the actors didn't feel that they had to invent a character from scratch. In the end, we recorded each line of dialogue three times and chose the one that everyone was happiest with.\n\nWe want to add some quality of life updates in the form of an options screen in the main menu, allowing the player to alter difficulty and adjust the audio balancing, and add a shop so that the player can buy and upgrade weapons.",
+    "winner": false
+  },
+  {
+    "title": "Raptor Run",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "Joshua Pattman",
+        "age": 16,
+        "city": "Oxted"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "Raptor Run is a fast-paced dinosaur survival game where the player uses their skill to grow a herd to tackle the end boss in as little time as possible.",
+    "description": "You play as a raptor, your goal is to defeat the T-Rex titan in as little time as possible. You can gather a herd of other raptors to assist you, and take down other dinosaurs along the way to rack up a high damage bonus for you and your herd. To regain health you must have enough energy, which can be increased by eating one of the dinosaurs that you and your herd have killed.\n\nI have learnt about the process of how to build a game from start to finish using Unity. I have also learnt about making an effective AI incorporating a Unity navmesh to avoid obstacles. Finally, over the course of making this game, I have learnt how to refine the game playability based on user feedback through testing phases.\n\nThe large amount of trees and other game objects for the map in my game caused it to be very slow whilst running. I fixed this by tweaking the lighting settings and collider settings, meaning that the physics and lighting calculations of these trees decreased. I also found that the sheer amount of dinosaurs in the game tended to slow it down, so I edited my AI script to recalculate once every 60 frames rather than once every frame. This decreased the processing power required for the game to run greatly.\n\nI would like to add more levels with different bosses to take down. I would also like to create an achievement system that gets the dinosaurs different cosmetic upgrades such as different skins and skills.",
+    "winner": false
+  },
+  {
+    "title": "Slow Moe",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "Mathew Rhys Jenkins",
+        "age": 16,
+        "city": "Pembrokeshire"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "Slow Moe is a fast-paced, simplistic, 2D platformer where using slow motion will allow you to collect power-ups and defeat enemies.",
+    "description": "Slow Moe is an arcade style game where you have to survive infinite amounts of enemies whilst collecting different coloured squares. You will direct Moe, the cute grey square, initially through five tutorial levels and once mastered (and you've watched the celebratory 2D firework show!) through five infinite arenas. Moe will encounter a wide variety of enemy squares that he must defeat in order to gain the highest score possible and survive!\n\nWhilst creating the game I furthered my knowledge in C# code, more specifically: raycasts, audio integration and instantiating. I developed my knowledge of raycasts by trying and successfully using them to detect when there is no longer ground below the enemy and where walls are. I now know how to show the raycasts by using Debug.DrawRay (new Vector 2 ( the location of the ray ) length + the colour ). By doing this it was easier for me to visualise when the enemy would turn and see objects. Before I taught myself how to use this function, I used 'triggers with box colliders' and 'detecting on trigger enters' but I learnt that raycasts work faster and are more cost-efficient when building the game in terms of frames per second.\n\nThere were four main problems I had to overcome during game development; slowing down time, creating different functions for the power-ups, raycasts and audio integration. The way I solved these issues was by using the Unity documentation web page, which explained how certain sections of code work inside. This taught me how to use the 'static variable' to gain access to the integers and floats from other scripts, which are the main focus of the game, and allowed me to create various power-ups with different functions.\n\nIf I was to develop 'Slow Moe' further, the first thing I would do is create a variety of different weapons that the player could randomly pick up similarly to the current power-ups. This would create another level to the game as certain enemies could only be killed using certain weapons for example.\n\nIt is also worth noting that there is a special secret area, hidden in the 'Arena Level Select' section of the main menu, where only the most skilled 'Slow Moe' players will be able to find it!",
+    "winner": false
+  },
+  {
+    "title": "Space Core",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "Jude Birch",
+        "age": 18,
+        "city": "Lewes"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "Asteroids, but an open-world adventure game - with dungeons to explore, boss fights and a huge story!",
+    "description": "Space Core starts in a futuristic utopian world. In this world, consciousness is a form of energy, like matter. Humanity has just made a breakthrough in conscious technology allowing people to harness the power of their mind to manipulate matter.\n\nAlien life has recently been discovered. Aliens are amazing, however, they're also very dangerous, so the human race collectively invests in a new Space defence system in case of alien attacks.\n\nYou play as the first ever recruit on this huge space station (named the Internation Space Defence Station - ISDS). It's your first day on the ship when the aliens betray humanity. Using mind control powers, the aliens force the captain of the ISDS to blow up the entire world! As the pilot of the second ever ship using \"conscious technology\", you survive the enormous blast; making you the only survivor and leaving you with a crumbled up world. The explosion happens in such a way that the world becomes a huge cluster of asteroids.\n\nYou're left in an 8000-year long coma, over this time aliens infect and populate this broken planet. After waking up, you find out that there is a mysterious time machine located at the core of the world, however, the core's so hot if you want to travel there, you need to upgrade your ship. In the game you'd explore this destroyed world, made up of asteroids, structures, bosses, trying to find a way back in time. You need three upgrade module from each corner of this world, you obtain by defeating large bosses.\n\nOne of the main skills that I developed was learning how to create my own text box system, with custom images/ faces. I did this mostly by trial and error however I also looked online on forums for help on a few things (one of them being how to load custom textures from the game's resources via an ID!)\n\nProbably the hardest thing to add to the game was the infinite terrain generation/ loading. The main problem was trying to make it run faster, I started off using an individual object for each block, but that was way too slow - so I switched to Unity's tile engine, which was good enough for premade scenes.\nHowever, for the randomly generated overworld it wasn't fast enough, I overcame this by researching how the popular game Minecraft (also has infinite terrain) did it, I found out it split the world up into sections called \"chunks\" and then it split those chunks up into regions. So I split up the world in the same way in my game and the performance is now a lot better!\n\nOne of the first things I would do is add more detail to the ISDS level and add a cutscene after the player gets obliterated.",
+    "winner": false
+  },
+  {
+    "title": "Tempo",
+    "tools": [
+      "GameMaker Studio 2"
+    ],
+    "authors": [
+      {
+        "name": "Harry Petch",
+        "age": 17,
+        "city": "Marden"
+      },
+      {
+        "name": "Louis Jackson",
+        "age": 16,
+        "city": "Brighton"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "A top-down fantasy action game where all aspects of the gameplay is synchronised with the music.",
+    "description": "Tempo is a mix of a rhythm game, a 'Metroidvania' & bullet-hell. The game supports both Keyboard/Mouse controls, but also Xbox controller/XInput API controller support. You play as a silent wizard equipped with a magic staff and (in the middle of the game) magic boots: the staff automatically fires a projectile in time with the beat of the current music track playing, as well as the player being able to perform a dash by holding either SPACE or any of the shoulder buttons/triggers, unlocked partway into the game to provide a sense of progression.\n\nThe theme of using the music of the game to create interesting gameplay twists persists throughout other aspects of the game as well: enemy movement and attack patterns change to match the current music track’s rhythm. Another twist in the gameplay is that the player gradually heals over time, yet the player only heals in time in the same rhythmic pattern according to the music track! An original soundtrack was composed by Louis Jackson to satisfy the game’s needs, as well as visual shaders to enhance the graphics. To make the game appeal to all kinds of players with different difficulty preferences, depending on circumstances, the player can respawn with a second staff.\n\nIn making the game, we explored the concepts of using delta time to synchronise the rhythm of the track as well as various music-related functions available in GameMaker. Working as a team has proven a valuable experience to both of us, as it was incredibly important for us to both understand our limitations and strengths. Prior to this project, we did not know much about Shader Programming and the benefits post-processing effects could have on the visual output and style on the game. The application of visual shaders has greatly improved the quality of our game.\n\nLouis' music was a key asset in ensuring the game was as good as it could be: catchy, interesting and varied music was essential to get right in a game focused around music, and through this project he has improved his composition skills, through learning techniques such as syncopation, prior to his Music GCSE exams.\n\nTo develop the game further, we would definitely like to add more content, such as potentially a desert-type world or a city landscape inspired by Scotland. In doing so we would be willing to explore new gameplay mechanics and twists relating to the synchronisation to the rhythm feature. We need to rework some art assets to allow for vibrant animation that would be keyframed in time with the beat as well.\n\nIn terms of technical improvements, we need to improve the system for tracking whether a “beat” has occurred more efficient and expand the functionality to multiple layers of the music track, such as backing, drums and melody.\n\nIn addition to this, it would potentially be interesting to explore the ability for players to add their own music and be able to play the game (or perhaps custom levels) with a custom soundtrack.",
+    "winner": false
+  },
+  {
+    "title": "They Came From the Sea",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "Thomas Robson",
+        "age": 18,
+        "city": "Durham"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "They Came From the Sea is an endless, wave-based 2D shooter, where your goal is to survive and get a new high score on the leaderboards!",
+    "description": "The player is tasked with running around an island, getting chased by wave after wave of ghosts, with nothing but their wits, speed, and gun to defend themselves with. The game cannot be beaten, as the objective is to challenge yourself to see how long you can delay your inevitable defeat. \n\nBeyond that, the game features: a leaderboard to track the stats for your top 5 highest scores; a series of achievements to challenge the player to try a new way of playing; and a fully fleshed out custom games system, allowing the player to tweak any of the game's settings to match their playstyle.\n\nThroughout the development of this game, I was constantly improving my understanding of game feel. For a good portion of the development, the game wasn't nearly as fun, but once I started going in to add effects such as screen shake, or a smoother camera system, the game just took off in how much fun players would be having.\n\nWhen the game was initially released on itch.io, it didn't receive much popularity or attention. It got a few downloads, and that was that, which was incredibly disappointing and disheartening, given how much I loved the game.\n\nSo, after a brief period of little motivation, I went back and started working to add new features, constantly updating the game to fix things, tweak values, and make the experience better overall. I also started attending events such as the Yorkshire Games Festival mas a developer to showcase the game, which proved to be a great boost to the game's popularity.\n\nI'm looking to implement more online features soon. Starting with global leaderboards, but hopefully, that could extend into co-op sessions, or even completely new modes! Once I make that leap, the possibilities of where the game could go are near limitless, and I'm excited to put all of my network code knowledge to the test and make something awesome!",
+    "winner": false
+  },
+  {
+    "title": "Warped Reality",
+    "tools": [
+      "Python"
+    ],
+    "authors": [
+      {
+        "name": "Anthony Moran",
+        "age": 17,
+        "city": "Luton"
+      },
+      {
+        "name": "Joseph Sweeney",
+        "age": 17,
+        "city": "Luton"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "Day to day activities can become rather boring for the regular individual, however for 5-year-old Noah, everything has the potential to be fun when he lets his imagination run wild such as using his bathtub as a pirate ship, sailing the seas and protecting his precious gold when he should be getting ready for school!",
+    "description": "At the beginning of the game, the scene is set. You play as a young boy named \"Noah\" (his character is reflective of the target audience) who is told to get ready for school by his mother. Upon reaching his bathroom you are prompted to interact with the bathtub, which sparks his imagination and the bathtub is no longer a bathtub but a pirate ship instead! When you sail to the shore you stumble upon a map, which is where the game truly starts.\n\nThe map lays out markers for various tasks that need to be completed whether this be collecting lost treasure, taking out enemy bases or challengers who set you a task or puzzle to complete or solve. The user can decide what order they wish to tackle these tasks. I made sure the tasks were unique to avoid repetition and to keep the player engaged. \n\nThe target audience for this game is primary school children. This is reflected in the cartoony art style and simple controls. For example, I decided to use arrow keys for movement as I know many people are not comfortable or aware of the WASD movement keys. Additionally, the spacebar covers actions such as attacking and interacting with objects; such objects are indicated as being interactable by a circle that hovers over it. They are the only primary controls used in the game which keeps it easy to learn and understand.\n\nWhen making this project I had strayed very far from my comfort zone to make something new and refreshing from my usual theme of games (narrative rpg). Instead, I had opted for a shorter but more thrill-seeking game that has more interesting game mechanics than I could ever imagine putting into an rpg.\n\nI also began to realise the importance of rapid building and how beneficial it is to have a prototype that I can share and get feedback from. This was extremely helpful for this game as there were many things that I changed or took out completely (which was not easy to do as some parts took a long time to make!).\n\nI would like to expand on different areas of the protagonist's interests, like wizardry for example. The levels would all follow through with similar tasks but would have a core mechanic tied to the level such as sailing for the already made pirate level or transforming objects in a wizard-themed level.",
+    "winner": false
+  },
+  {
+    "title": "Wip",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "Adam Pace",
+        "age": 18,
+        "city": "Sunderland"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "15-18",
+    "quote": "A short story-driven platformer about friendship, loss and moving forward.",
+    "description": "You the player come across a PC that is running an old operating system and has been out of use for many years. Stored within it you find an abandoned game project and its protagonist \"Char1\" a highly advanced AI that has been running on the desktop. \"Char1\" asks you to help him navigate through the game's levels and defeat the colourful characters that exist in the world. Through the adventure, he forms a bond with you (the player) and tells you more about himself and the game's creation. As you approach the end of the journey you come realise the unfortunate reality of \"Char1's\" existence and he asks you to make the ultimate decision regarding his future.\n\nThrough working on Wip I developed numerous skills in game development, art, animation and most of all storytelling and world building. I tried taking on a whole new way of creating games, taking more time to focus on the story and atmosphere of the game. The story is one I’d wanted to tell for a while as it has a message that means a lot to me. So making the story as best as I could was a must. It was a great way to exercise my creative writing skills. As well with the atmosphere, in my previous games, I've often overlooked the power of lighting and how it can really set the tone of a level. So with each level, I tried using different techniques to get a different feeling whilst playing through. This worked especially well with the final stage where the bright colourful lights contrast with the grey lifeless city.\n\nThe biggest difficulty I had was when writing the story and dialogue for 'Char1'. I wanted to make him a likeable, friendly character and to get him and the player to form a connection with one another. I really needed that to convey the message of finding friendship in unlikely places. I also needed the ending to be impactful and memorable, and a one that wraps up the story well, so the player walks away satisfied. I kept scrapping scripts for the game over and over as I could never think of any way to make the story work well. I eventually sat down and properly thought about not just the story of the game but everything surrounding it like, how was 'Char1' made, what kind of computer was it running etc. This made the story easier to piece together and how I ended up making the script.\n\nFor future development, I would like to add a way for the player to interact with 'Char1'. Like with simple yes and no answers which would change the outcome of the story and 'Char1's' attitude towards the player. This would give a much more interesting dynamic to the game and make the player's experience more emotional.",
+    "winner": true
+  },
+  {
+    "title": "Deep Sea Dash",
+    "tools": [
+      "Scratch"
+    ],
+    "authors": [
+      {
+        "name": "Catherine Lanaspre",
+        "age": 13,
+        "city": "Croydon"
+      },
+      {
+        "name": "Faith Ekundayo",
+        "age": 13,
+        "city": "Croydon"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "A fish that struggles through a sea that is abundant with plastic, hoping that it will get past the plastic to safety.",
+    "description": "In our game, a fish has to swim past the pieces of plastic that are floating in the ocean to get to the flag. We based our game on the real life impact humans are having on the environment. We were inspired after we read an article in the news about a dead whale who had washed up on the shores of Indonesia with 1,000 pieces of plastic in its stomach. This game is to inform players of the impact they are having on the environment. \n\nWe learnt how to make a rolling screen. We learnt that instead of making the backdrop move, it was a matter of making the objects move from left to right. Also, when the sprites moved from left to right, we had to ensure it looked realistic. When making the seaweed that was on the ocean floor, we programmed the seaweed to alternate from one costume to the next to act like the seaweed was swaying in the water.\n\nWe faced much difficulty when trying to make our game look more realistic as we weren't sure how we were going to make the fish like it was swimming in the water and the seaweed look like it was actual seaweed. In the end, we discovered that we could constantly switch between two costumes to make the fish as if it was swimming with a fin that flapped up and down; to make the seaweed like it was swaying.\n\nIf we were to develop our game, we would add more levels with different scenarios. For example, another level would be about solving air pollution: there would be a human who owns a petrol car, they have to drive down the road and collect coins, once they get to a certain amount of coins they can upgrade to an electric car.\n\nWe also plan on adding a button that enables the player to change the speed in which their character is moving at, this button could also make it possible to add a timer, making the game more intense as the player has to complete the task in a certain amount of time.",
+    "winner": false
+  },
+  {
+    "title": "Donut Rush",
+    "tools": [
+      "Unity"
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "Donel is a newly fried doughnut, and doesn't want to be sent to the shops to be eaten, like his fellow doughnuts before him, so he decides he must escape the factory and try to prevent fellow doughnuts from the fate of being eaten.",
+    "description": "You have just been fried, and you have to escape the factory into the city. Once you've left the factory, you go on a rampage through the city to find doughnuts in tanks, which have been sent to be sold in shops, (otherwise known as \"Stray Donuts\") and release them from their glass tanks so that they may reach safety. Once you have finished that level, a representative of the ASD (Association for Saving Donuts) comes to congratulate and thank you for your selfless deeds. From then on, this particular representative will help you on through the next three levels (This is a demo version which has 5 levels of varying length) and will later advise you to collect a \"Diamond Donut\".\n\nI learnt how to use unity and program in C#. I also learnt how to use different programs to manage different things, rather than just use one gargantuan program to manage everything. I learnt how to use arrays and list in programs to manage colour.\n\nWhen I was trying to make the pause feature, I wanted to make it so that everything in the scene (level) went dim so that it was obvious that it was paused. However, I struggled to do this because some of the game objects in the scene had colour tints put onto them and so lost that tint when it was paused and then unpaused (I could have overcome this by just changing the opacity instead of the RGB figures, but it looked odd when I tried it). To overcome this, I programmed the game object that managed the score and time variables to make a list of every game object in the scene and their colour tint, so that when the scene was dimmed, there was still a list keeping track of every game object's colour tint, so that it could be easily reassigned.\n\nI would add more levels and maybe animations to the buttons that help navigate through the levels.",
+    "winner": false
+  },
+  {
+    "title": "Elytron",
+    "tools": [
+      "Scratch"
+    ],
+    "authors": [
+      {
+        "name": "William Roper",
+        "age": 14,
+        "city": "Blackburn"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "My game is a tower defence and strategy game, which allows your player and turrets to progressively get stronger as the enemies get more powerful.",
+    "description": "Your goal is to defend against the enemies (or beetles) which try and break a wall down separating you from them. When you kill the enemies, you gain gold which can be used for weapon upgrades along with automatic turrets to help kill the enemies. To counter the players power growth, the enemies get stronger throughout the game by starting from a tier 1 enemy to a tier 3, then a boss. \n\n\nThe wall defending you from the enemies from reaching the other side of the map. When the enemies do reach the right edge of the map, they’ll die and take health away, unless there is a shield. A shield only spawns on normal mode, not hard and it can defend greatly against the enemies, but you can’t repair it.\n\nDue to this being my first game, I improved my skill of being a game developer. I have learnt what creating a game is like and some problems which can occur whilst making a game such as game bug fixes, game testing and countless problems mid-game development. I have also improved my knowledge of scratch and the new scratch update. Without making the game, I wouldn’t even know half the things about scratch which I currently know now.\n\nI had trouble coming up with new ideas for my game to improve. To fix this I asked my friends to test the game out and give me feedback. If it wasn’t for my friends, I wouldn’t have a shield, a difficulty system, a boss and the game wouldn’t be as balanced in difficulty.\n\nI would suggest adding a repair tool or wrenching to the game, which could repair damaged walls or turrets. The repair tool would also have its own durability.",
+    "winner": false
+  },
+  {
+    "title": "Far-Fetched Phantoms",
+    "tools": [
+      "Corona",
+      "Atom",
+      "Inkscape",
+      "Incompetech.com for the music"
+    ],
+    "authors": [
+      {
+        "name": "Alex Robinson",
+        "age": 12,
+        "city": "London"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "You are a girl named Laxmi and you explore a haunted mansion where you encounter multiple Phantoms who extinguish your light, fortunately, you have brought your shield and have magical far-fetched powers that let you push away Phantoms.",
+    "description": "You are a girl named Laxmi and you explore a haunted mansion where you encounter multiple Phantoms who extinguish your light, fortunately you have brought your shield and have magical far-fetched powers that let you push away Phantoms.\n\nYou explore a haunted house and protect yourself against the Phantoms that attack you, you have a shield and far-fetched magical powers to help you make your way through the house unharmed. Make sure your light isn’t extinguished as that will cause you to lose the level and have to restart that level, there's a time limit on each level, you have to survive for that amount of time to complete the level.\n\nThis is one of the first I have created that includes a gravity well to pull in the enemy. This is also my first game with different types of enemy, and the first time I create a level select with hidden levels until the previous level was unlocked. I learnt how to move the background for the level select and the first time I use transition2.\n\nA time that I encountered difficulty was when I found a bug that would stack damage done to the player, this happened because I forgot to remove the collision listener. Another time I encountered difficulty was when I had to change the ghosts damage, speed, etc. so that the game wouldn't be too hard but at the same time not too easy.\n\nIf I could continue working on my game I would add new houses (levels), and I would create new characters with new abilities. New ghosts would be created each one with unique speed, damage and effects. I would also add an endless mode to make the game less repetitive, the endless mode would be customisation as you would be able to choose the amount of ghosts and the type of ghost, more ghosts would be added the further you get into the endless mode.",
+    "winner": false
+  },
+  {
+    "title": "Ladder Climb",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "Louis Charles",
+        "age": 14,
+        "city": "Reading"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "A strategy game involving climbing ladders to move up and down floors in order to avoid enemies and traps to get to the goal at the end of each level.",
+    "description": "The player moves in one direction and bounces off the walls to change direction, the player can place ladders anywhere in the level to move up or down floors in order to avoid traps and enemies, collect power-ups, get to the next floor and finally get to the goal. The player can be damaged by Ghosts and Spikes. The player can collect hearts to regain health.\n\nI learnt a lot of how to make games in unity and create imagery for games, I also learnt a lot of the c# programming language including c# for unity.\n\nI encountered a few issues with the ladders and the movement, so I started by thinking about what code I need for it to work and then using the unity reference to find the functions and how to use them and then implement them into a working solution.\n\nI would add more obstacles and enemies, and make the game more visually appealing with better sprites and animations. I would also make the game an 'endless runner' style game, where the levels are effectively infinite and you play until you die and try to earn better scores every time.",
+    "winner": false
+  },
+  {
+    "title": "LASERASE: Demolition in the future",
+    "tools": [
+      "Corona SDK",
+      "Inkscape",
+      "Krita",
+      "Zapsplat",
+      "Atom"
+    ],
+    "authors": [
+      {
+        "name": "Max Robinson",
+        "age": 14,
+        "city": "London"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "A demolition puzzle game where the player uses a mirror to reflect a laser at targets to blow them up... avoiding lethal TNT which on detonation would blow you up!",
+    "description": "In my game the player is trying to demolish part of a building in three different areas; a city, the countryside and a factory. You must demolish the bricks by deflecting a laser onto it using mirrors. Every level the player is given one to three mirrors and a few bolted mirrors, these are what they have to use to win the level. Unfortunately for the player, there are also some obstacles. There is TNT laid around the demolition site which the player must not detonate using the TNT. If this happens the level is lost and the player has to start again. The bolted mirrors cannot be moved whereas the normal mirrors can be moved by clicking dragging. There is no time limit so the only thing holding the player back is the puzzles.\n\nMaking this game I learnt how to make looping transitions using the \"transition\" library in Corona and I learnt how to use ray-casting within the physics library. I learnt how lasers and light reflect off of mirrors and how to use a formula to predict the reflection in my game. I also learnt a way of organising my levels, I used a two-dimensional array to choose the positions of the blocks. I learnt a new easing transition for the scrolling on the level select screen. I learnt how to use particle 2dx to make explosion particles in my game and I learnt how to translate a .json file into a lua table.\n\nWhile making a level I discovered that all my block were too big and would get stuck on each other when they were meant to move. I had to make them an inch smaller so that they wouldn't get stuck on each other. I also forgot to make art for the anti-gravity blocks and by the time I remembered I saved them as pngs instead of Svgs. That meant I had to redo the bricks exactly the same but in green, if I had remembered before I could have just changed the colour of the pictures using Inkscape.\n\nI would probably improve the art and add some more sound effects. I would also redo some of the levels and try to make them harder to complete. I would also add an exit button so that you don't have to get out of fullscreen to close the game. I would make some celebration confetti, as well as a cool message, appears on the screen once the player finishes the game.",
+    "winner": true
+  },
+  {
+    "title": "Spooky Da Ghost",
+    "tools": [
+      "Clickteam Fusion 2.5"
+    ],
+    "authors": [
+      {
+        "name": "Pavanjot Town",
+        "age": 13,
+        "city": "Rochester"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "Prepare for a fun time filled with rage and maybe laughter.",
+    "description": "You go through a tutorial level that is quite easy then you go to the menu to pick level two. This is the hardest level in the game, it is a gravity shift level. After you complete that level by getting 100 points, you then watch a short animation where something happens to Spooky and leaves the game at a slight cliff-hanger. You are then taken to the end page where you read a short message then you can press a button where it then exits the application. This game is the story of Spooky trying to get back his powers which could lead to a bad ending for Spooky.\n\nI have learnt many skills using Clickteam Fusion and Piskel. Many of these include new things such as learning how to code certain things and many of these include improving old skills that I knew but were not too good at. Now I can create games using Clickteam Fusion using the platform movement object and I could create a new one without looking at my older versions of my game. Through looking at the older versions of my current game, I have seen how my skills have grown and how much my game has evolved due to me learning new skills. I can now create collectables, enemies and blocks that damage you. I have also learnt how to animate and create sprites using Clickteam Fusions and Piskel by creating many concept characters and using these tools frequently. I can now create walking animations, idle animations, item, sprites (characters) and many more. Without this skill game development would be quite hard as you need characters to base your game off or else you design a whole game and then change it because your sprite looks different to the genre that your game fits now. I believe that I have learnt a lot of skills, but they did not always work and only worked because I tried repeatedly. I also learnt how to use wireframes, storyboards and map designs efficiently.\n\nI encountered a difficulty in my game when I was creating my gravity shift feature. This was when it would sort of glitch and sometimes the character would glitch out, What I then did was first make sure that every frame had the same crop and so did the bricks, After I asked around and I was told about using flags, so I tried that and it worked. It may take more complexity but at least it works. I believe that this feature was worth it as it made my game's potential higher and it made it more fun.\n\nI would add another level where it would add more on the story of what happens after the animation, so like a flashback level where it tells the player about why spooky cannot get overloaded with power. I would also try to add more interesting features that would make sure that my game never gets boring. I would also try and see if I could add a two-player mode. All these features would greatly improve my game but I would mostly look at the feedback that I have received and then improve my game from then on.",
+    "winner": false
+  },
+  {
+    "title": "Succession",
+    "tools": [
+      "GameMaker Studio 2"
+    ],
+    "authors": [
+      {
+        "name": "Elsie Habgood",
+        "age": 11,
+        "city": "Sheffield"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "Succession teaches the player about the kings and queens who ruled England from 1066-1901 with colourful graphics, weird noises and crazy game modes.",
+    "description": "You go through a tutorial level that is quite easy then you go to the menu to pick level two. This is the hardest level in the game, it is a gravity shift level. After you complete that level by getting 100 points, you then watch a short animation where something happens to Spooky and leaves the game at a slight cliff-hanger. You are then taken to the end page where you read a short message then you can press a button where it then exits the application. This game is the story of Spooky trying to get back his powers which could lead to a bad ending for Spooky.\n\nI have learnt many skills using Clickteam Fusion and Piskel. Many of these include new things such as learning how to code certain things and many of these include improving old skills that I knew but were not too good at. Now I can create games using Clickteam Fusion using the platform movement object and I could create a new one without looking at my older versions of my game. Through looking at the older versions of my current game, I have seen how my skills have grown and how much my game has evolved due to me learning new skills. I can now create collectables, enemies and blocks that damage you. I have also learnt how to animate and create sprites using Clickteam Fusions and Piskel by creating many concept characters and using these tools frequently. I can now create walking animations, idle animations, item, sprites (characters) and many more. Without this skill game development would be quite hard as you need characters to base your game off or else you design a whole game and then change it because your sprite looks different to the genre that your game fits now. I believe that I have learnt a lot of skills, but they did not always work and only worked because I tried repeatedly. I also learnt how to use wireframes, storyboards and map designs efficiently.\n\nI encountered a difficulty in my game when I was creating my gravity shift feature. This was when it would sort of glitch and sometimes the character would glitch out, What I then did was first make sure that every frame had the same crop and so did the bricks, After I asked around and I was told about using flags, so I tried that and it worked. It may take more complexity but at least it works. I believe that this feature was worth it as it made my game's potential higher and it made it more fun.\n\nI would add another level where it would add more on the story of what happens after the animation, so like a flashback level where it tells the player about why spooky cannot get overloaded with power. I would also try to add more interesting features that would make sure that my game never gets boring. I would also try and see if I could add a two-player mode. All these features would greatly improve my game but I would mostly look at the feedback that I have received and then improve my game from then on.",
+    "winner": false
+  },
+  {
+    "title": "The Creature Study Squad: Spell like nobody is watching!",
+    "tools": [
+      "Lua",
+      "Corona",
+      "Atom",
+      "Inkscape",
+      "Krita",
+      "Audacity"
+    ],
+    "authors": [
+      {
+        "name": "Elise Scheurer",
+        "age": 10,
+        "city": "London"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "You are a mythical creature flying in the sky (dragon, griffin, phoenix or Pegasus) and you have to spell 12 words perfectly and then you can unlock the next level.",
+    "description": "You are a mythical creature flying in the sky (dragon, griffin, phoenix or Pegasus) and you have to spell some words. If you have at least 7 correct, you succeed. If you have less than seven, you fail. All the correct words will be displayed as well at the end of the level, so that you can memorize them if you would like to try again to aim for a higher score. (There are 11 levels.)\n\nI developed the skills to use Lua, Corona, Atom, Inkscape, Krita and Audacity. I learnt how to use Lua, the first programming language I have ever used. Here are A FEW things I learned: functions, tables and how to put ideas in Corona. Corona provides the functions and it simulates a device like a phone or an iPad. Atom is where you write the actual code (in Lua) and it colours the text to make it easier to read. Inkscape is a program to draw characters, it has no pixels. Krita is like Photoshop, but I used it to draw. (I used Inkscape then I found out about Krita, so I ditched Inkscape and used Krita instead). Audacity is a program I used to record the words, change the speed (that also changes the voice a bit), normalize the volume and export as mp3. I hadn’t used any of these programs before.\n\nOne of the difficulties I encountered was that I didn’t have enough words and it was close to the deadline, so I started doing 20 words every day, and, sure enough, I had all the words I needed.\n\nFor further development, I would add more levels and different game modes (beginner, average, pro, etc…), customisations (chose which creature, which background), and themes (words will depend on what theme you have).",
+    "winner": false
+  },
+  {
+    "title": "Water the Crops",
+    "tools": [
+      "Unity"
+    ],
+    "authors": [
+      {
+        "name": "James Lindsay",
+        "age": 11,
+        "city": "Somerset"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Making",
+    "group": "10-14",
+    "quote": "Climate change is making it hard for Spud the potato farmer: there's less rain and more storms, but you can help water the crops by diverting precious rain during the stormy season using crazy inventor Wizz's drone umbrellas.",
+    "description": "Your aim is to direct precious water on to your two fields of potatoes during the stormy season. The more water the plant gets, the healthier it is. But if the plant dies and turns brown, it won't recover. Your drone is battery powered: watch the indicator in the bottom right of the screen to make sure you don't run out of power. Use the overhead image in the top left of your screen to predict where rain is likely. At the end of the season, Spud’s potato crop is harvested and sold. If the crop isn’t large enough, Spud goes bust. Each year, there's less rain and the drone umbrellas have less power. Spud's aim is to survive for five seasons and harvest the largest total crop.\n\nThis was the first Unity game I’ve made where I tried to make as many of the 3D models as I could. I taught myself Blender and made the umbrellas, the dry stone walls, the gates, the trailer for the tractor and the potato plants. \n\n(I used free assets for the clouds (https://assetstore.unity.com/packages/tools/particles-effects/cloudstoy-...), the tractor itself (https://assetstore.unity.com/packages/3d/vehicles/land/farm-machinery-lo...) and the transparency for the potatoes that you see after the tractor has harvested (<a title=\"Potato PNG\" href=\"http://pluspng.com/potato-png-1054.html\">Potato PNG</a>).)\n\nI learnt a lot about particle effects in Unity and used them for the rain, the leaves of the potato plants, the dust that comes up behind the tractor as it harvests and the smoke from the tractor's chimney. \n\nI decided to do some of the game's sound effects and taught myself Audacity and recorded the keyboard sound for the instructions, the gate creaking for harvesting (I had to try about 15 gates to find one that creaked enough!), the wine glass celebration, and me and my sisters for the winning and losing screens. I also used Audacity to make the ascending sounds for the weighing scales and the zooming of the newspaper cuttings. \n\n(I used free creative commons rain sounds from http://soundbible.com/2011-Rain-Background.html and tractor sounds from https://freesound.org/people/Anika11/sounds/325680/.)\n\nMy decision to make nearly everything meant that Water the Crops took much, much longer than anything I'd ever done before in Unity. I've worked on it as my main project for about 9 months. It was scary when something went wrong that I couldn't fix and after a few days, I thought all the work might go to waste. This taught me to stick with the project and not to panic. I learnt that I would eventually find a solution, even if it wasn't exactly what I'd originally thought of.\n\nI would like to add a second phase. After 5 years, Spud's drone crashes. So Spud advertises for workers to dig ditches and build dykes. Each year, they have a certain amount of energy to do this. Then you see whether they are able to divert enough rain to the fields to keep the crops alive. You need to work out how the water will flow down the hillsides. Each year you build on the drainage system already in place, but there is less rain.\n\nI have also thought about making the game a two player game. Each player would have one or two fields in the same terrain and could use their umbrella to increase the rain falling on their crops or direct it away from the other player's crops.",
+    "winner": false
+  },
+  {
+    "title": "Change Starts With You",
+    "platforms": [
+      "Desktop",
+      "Console",
+      "VR",
+      "Nintendo Switch"
+    ],
+    "authors": [
+      {
+        "name": "Kyle Randall",
+        "age": 16,
+        "city": "Bournemouth"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "Evaluating a serious issue in today’s society in a non-graphical and enjoyable style. A game holding a moral meaning through the fun and challenging mini games and story.",
+    "description": "Plastic is one of the world’s biggest environmental issues today. This most versatile material is causing a lot of harm to our wildlife especially Birds and marine life. So what would you do if you had the chance to resolve this issue. Become either a vet or a diver and take control in helping reduce the damage being caused by this issue. Clean beaches, dive and clean oceans, help marine life. throughout the game, the more you as a player as well as a character contribute to helping with reducing this issue the more you will see the change of the world that is created through this experience provided by the games story and meaning. There are also fun little mini games included in the main story through interacting with the animals to complete as well as added extras such as customising you character, diver station or vet building. These will not only contrast the issue and make the game for creative and colourful but also be appealing to a younger audience of around 12 years old and older. This allows for a wider array of people to play the game as well as take in the message being presented throughout and maybe even make a change to this situation in real life.\n\nThe art work of the game will be designed in a cartoon style to appeal to younger people but will also have elements of realism through surroundings and characters to make the game’s message to be realistically presented. The game will be set in a made-up town with a coast and beach very close to the player's house as well as having a school and various other buildings. You play as either a young girl or boy. You can name your character and this name will be referenced by the other characters present in the game. the other computer generated characters will consist of people in your school class, depending on what job profession you pick, your work colleagues and others such as friends, family and people in the local community of the town.\n\nThe game will be set on many devices so the controls will vary on the console/device that it's being played on. For PlayStation 4, movement is the right analogue stick, your camera movement is you left analogue stick, X is to jump, O is to crouch/duck, Triangle is to pick up objects and interact with doors and other objects, Square is to use items/objects picked up, R2 is to sprint, R1 is to bring up a map of your town, L2 is to zoom in with objects when needed, L1 is to change view from 3rd to 1st person or the other way round, The D-pad is to select responses, Options is to access the main menu and the middle pad is to draw/sign papers. These controls are then altered to suit the console/ device as well as being altered by players if they want to, suiting play-styles.\n\nThe game would be aimed at a younger age group from 12 upwards due to the graphics style that would be implicated into making the game. The style would be colourful as well as cartoony to make the game more appealing even though the game is expressing a very serious issue. The message that would be shown is for all age groups due to it wanting the player to realise the level of danger that plastic can cause to our wildlife as well as making them also realise the importance of recycling and other schemes such as cleaning local beaches.",
+    "winner": false
+  },
+  {
+    "title": "Colour Theory",
+    "platforms": [
+      "Desktop"
+    ],
+    "authors": [
+      {
+        "name": "Jagoda Warda",
+        "age": 16,
+        "city": "Somerset"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "Your name is Rem. You’re trapped in a fading world losing its colour. With nothing but your old sketchbook, you must try restoring the land to how it once was while searching for a way out.",
+    "description": "A Third person 3d Adventure game with platforming features, which gives you the ability to manipulate the environment for utility and combat by drawing symbols on the screen using a mouse or graphics tablet. There are sections of platforming and puzzles which will use the drawing mechanic and with that the ability to spread colour to the environment.\n\nThe character you play as is Rem, a determined, smart yet fearful 15-year-old girl. They wear colourful clothes so that they stand out in the background. Most the world starts off black and white when you enter until you either enter one of the few areas with colour or start colouring it yourself. Then, the world is vibrant, colourful and more cluttered. NPCs are most distinctively amphibians, reptiles and insects (or a mix of two or more!) but the enemies and some friendly characters are more fictitious in design. Littering the world are ruins you can fix, some of which are save points, and how much you colour the map may impact the ending you get at the end of the game. When it comes to colours, there’s a bit of everything. Certain areas can be based off certain colours but when the environment is no longer black and white it’s meant to be impactful, you can see how much of the world has been washed away before you set foot there. When this happens more NPCs will appear, and other abilities are unlocked, but the enemies will concentrate on defeating you more as well. The enemies themselves can take various shapes and are comprised of dark-looking matter. The stronger they are, the more unorthodox they look; They’re designed to make the player feel uneasy.\n\nWalking consists of the WASD keys. jumping and climbing simply requires pressing and holding SPACE. pressing ESC displays the options menu for configurations and quitting the game. R opens up your equipment and Q activates Draw mode, which slows down the game allowing the player plenty of time to draw symbols with the Mouse or alternatively a graphics tablet. There is also the option to hold SHIFT to do draw mode in real time for speedy situations. Lastly, E is used to interact with objects and characters.\n\nMy target audience could be anyone from age 8-16. the game is meant to be challenging but enjoyable to look at, and hints to puzzles help younger people progress while those who are older get rewarded for not needing hints. parts of the game come off as eerie but not extremely so.",
+    "winner": false
+  },
+  {
+    "title": "Conundrum",
+    "platforms": [
+      "Desktop",
+      "Xbox One",
+      "PlayStation 4",
+      "Nintendo Switch"
+    ],
+    "authors": [
+      {
+        "name": "Tyler Rotheram",
+        "age": 18,
+        "city": "Liverpool City"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "A thrillingly comedic interactive adventure game with escape-room puzzles; whose story is influenced by items.",
+    "description": "Conundrum is a first-person, interactive adventure game with escape-room puzzles in which the player tries to escape a hotel they have been trapped inside. The player is put in the shoes of 16-year-old Sasser, who has been abducted and held in a hotel where he is made to complete trials based upon the seven cardinal sins. The game revolves around 8 diverse characters based on the Enneagram of Personality and their escape from the hotel. To escape the hotel, the abductees will be made to complete trials to unlock new pieces of information.\n\nConundrum is divided into two segments, exploration and trials. The exploration sections allow the player to explore the hotel – and its many floors – to find possible methods of escape, and talk to other characters. Trials in this game are a hybrid between escape-the-room style puzzles and platforming. The games’ direction is influenced by the way in which the player uses items they find throughout the game – both in solving puzzles and through character interactions. These decisions will result in one of eight branching storylines, each with three unique endings (totalling 24 possible outcomes). Each ending includes information vital to discovering the truth behind their abduction.\n\nThe player must explore the hotel to find items which they can use to solve puzzles and unlock new rooms. The order in which they unlock rooms is completely up to the player, and how they choose to use their items. While game progression is achieved through completing the trials on each floor, plot progression is achieved through the different ways items are used will influence the development of characters in the game. For example, if a player finds an item (e.g. an apple), they could choose to give it to, or not give it to, a hungry character. This could change the relationships between the characters. Items can also be combined (such as red paint and blue paint) to create a new item (purple paint), which can be used to solve puzzles.\n\nThe target audience for this game is players aged 14 and upwards - whilst the game will be PEGI 12 - the game’s puzzles may prove too difficult for some. Conundrum will be made for a primary audience of puzzle-lovers who want to be challenged, and story-lovers who wish to be immersed.",
+    "winner": false
+  },
+  {
+    "title": "Coral",
+    "platforms": [
+      "Xbox One",
+      "PS4",
+      "Nintendo Switch"
+    ],
+    "authors": [
+      {
+        "name": "Josiah Hendy",
+        "age": 16,
+        "city": "South Gloucestershire"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "A 3D action adventure game set in a colourful underwater kingdom born from a child's imagination where the player's progress is measured by their skill and competence.",
+    "description": "Coral is an open world 3D action adventure title that encourages exploration and skilled play through a deep yet accessible combat and base-building system. The game is set in a vibrant underwater kingdom born from the imagination of a child named Carl. When he enters his imaginary kingdom he dons the title of Coral. As he explores his kingdom, real-life happenings will intersect the gameplay and affect the world around him, keeping the player invested and on their toes. A diverse cast of characters, fluorescent visuals and a mesmerising soundtrack will complement the addictive gameplay loop of exploring the world and upgrading Coral's base, weapons and abilities. Obtaining different materials and items from combat or exploration gives the player a chance to upgrade their base, whether that means building a new shop or expanding the size. Using the new tools that they gained from building or upgrading things at the base, the player gains more tools to explore the world and battle enemies. This is all complimented by a fair difficulty curve that increases as the player explores the map and progresses through the game.\n\nThe game should employ a watercolour-like style to make the varied underwater locales that the game is set in really stand out and pop. The underwater areas would be extremely varied to ensure that no single area looks generic or bland, from vibrant coral reefs to abandoned underwater temples with deep lore to uncover, to more technological research facilities. The playable character would be called Carl - in the real world, that is. In the imaginary world he dreams up, however, he goes by the name Coral - a play on his real name with a fun twist on the underwater setting. His design would be that of an adventurous youth with a practical albeit flashy design - it is from the mind of a child, after all. Coral would meet a diverse cast of characters amidst his travels - including lots of intelligent sea life, underwater researchers, and maybe even some ancient creatures with some dark tales to tell...\n\nThe game's target audience would be families, generally between the ages of 8 and 18, although older adults could find enjoyment in the game due to the open world. Children would find it accessible due to the vibrant visuals and quirky characters, whereas older players would take interest in the rewarding battle system, deep customisation options and the rich lore of the world. It could be a younger player's gateway into the wider world of gaming, as the visuals would immerse them in the world and they would then be hooked on the fast-paced battle system and deep story.",
+    "winner": false
+  },
+  {
+    "title": "Creatively Bankrupt",
+    "platforms": [
+      "Desktop",
+      "Nintendo Switch"
+    ],
+    "authors": [
+      {
+        "name": "Elizabeth Orji-Smith",
+        "age": 17,
+        "city": "London"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "An Action RPG about a small animation crew turned part-time robin hood heist group snoop around studios in a hyperbolic entertainment built city to share once exclusive resources, balance the scales, and bust open the big score - the secret vault!",
+    "description": "The entertainment industry has grown vastly, literally shaping Blast City into something almost fantastical - weird, new studios are being built rapidly and new contraptions are being made to aid the creation process. Unfortunately, many groups and companies have started hoarding these resources for themselves like secret family recipes, trying to be the best of the best, them alone.\n\nThe story is of a freelance animation studio with different skill-sets trying to break down barriers. Their goal is to collect the private tools and secret tech from other groups, retrieve copies, and provide versions that are able to be distributed for everyone to use. Other groups and sources help them with funding and quirky heist supplies, and you’ll hear their stories of triumphs and struggles as well.\n\nThe final goal is to get to the secret vault held by a once benevolent but now closed off superteam - it’s said to contain animation reels, cells and tools no longer accessible anywhere…\n\nNo heist is the same in the campaign, and learning how to deal with the problems you’ll face is the main core of the game - because no heist can really go smoothly.\n\nStrong use of colour will be used to convey a bouncy, snappy environment. Homely, warm colours to show familiar, safe environments. Deep and flashy colours to show the riskiness and excitement of the heists. Top off with a mix of contemporary flourishes as it’ll be in a contemporary typesetting. \n\nThe game will be 2.5D as there will be different perspectives for different segments of the game. This’ll be seen when exploring the hub (represented by your team’s studio/underground heist base) and other places in the city (An acme adjacent themed prank shop, a pizza store to get contacts, etc.). \n\nMy game is rated PEGI 12 but my target audience is wide. At the core, it’s a designed to be a fun multiplayer game that promotes teamwork where any mix of people can jump in, be it a father and daughter, a trio of students, or a group of co-workers. The main campaign hopes to ring true to different age demographics - pushing the philosophy of ‘sharing is caring’ to more stronger pleas of unionisation and a stronger, open artistic community.",
+    "winner": true
+  },
+  {
+    "title": "Efflorescia",
+    "platforms": [
+      "Mobile",
+      "Tablet"
+    ],
+    "authors": [
+      {
+        "name": "Amelia Hollingsworth",
+        "age": 16,
+        "city": "Lancaster"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "RPG meets rhythm game in this heart-warming floral fantasy adventure.",
+    "description": "Explore the 4 flower clans of Efflorescia as a customizable protagonist, gaining party members along the way and working together as a team. Save the flower people from the feared underground crystal people by battling enemies through a rhythm-based minigame!\n\nEfflorescia is inspired by both RPGs such as Undertale and various Japanese rhythm games. While venturing through the game, you and the NPCs are pixel sprites, and the backgrounds are detailed pixel art to match. Each clan's area has a different colour palette and atmosphere, and is based on a type of flower- e.g. the Rose Clan is warm and homely, as you are surrounded by large tall roses that have magical glowing fairy lights wrapped around the stems of each one.\n\nYou can choose different side characters to join your party, as after you defeat each one they will offer to join you on your journey. They give you different 'powers' while playing the rhythm game 'battles' (these powers assist you during the battle, for example, a sorcerer may heal your hp during battle). Choice of party members also affects dialogue & story.\n\nDuring battles, there is no pixel art, but a generic background that suits the clan the battle is in (unless a boss, which has its own specific background.) A chibi version of the enemy is in the middle of the screen, animated to the beat of the song, and glowing circles move out of the character to the eight circles at the sides of the screen, which you have to tap once the two circles overlap. Once you have won each battle the song & beatmap goes to your library where you can play it anytime for fun, at any level of difficulty.\n\nAnother feature is the gacha feature - when you collect enough coins from winning battles you can spend them on this feature, which randomly gives you an item that will help you. They range in rarity and can be food (that heals your HP so that you can play more songs from the library.)\n\nEfflorescia uses simple controls. While exploring, you can tap use on-screen controls to move your character and select items, etc. During the rhythm games, you tap the right circles at the sides of the screen.\n\nEfflorescia would be a game that attracts audiences of any age. Although the story is safe for younger people (around 7 and up), the innocence of it could warm anybody's heart, no matter their age.",
+    "winner": false
+  },
+  {
+    "title": "Light Up, Lightbulb!",
+    "platforms": [
+      "Desktop",
+      "Xbox",
+      "Nintendo Switch",
+      "PS4"
+    ],
+    "authors": [
+      {
+        "name": "Celeste Herron",
+        "age": 15,
+        "city": "Glasgow"
+      },
+      {
+        "name": "Eva Simpson",
+        "age": 15,
+        "city": "Glasgow"
+      },
+      {
+        "name": "Lara-Anne Herron",
+        "age": 17,
+        "city": "Glasgow"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "Light up, Light Bulb! is an exciting and heart-warming tale centring around you, the player, and a colourful cast of characters that aid you in your adventure. Explore the world from a light bulb's point of view and restore the light like a true hero!",
+    "description": "When a family goes on vacation and hires an irresponsible pet-sitter that leaves the lights on, the house is plagued into darkness as the existing bulbs die out. It's up to the player and their squad of light bulb friends to restore all the lights in the house. Overcome several puzzles, hazards, and mini bosses all a while avoiding the persistent cat as he attempts to permanently halt your progress.\n\nThe game will be set in and around a family home. The house has an attic, a nursey, a bathroom, a kitchen, a living room, a basement and a garden. Each area of the house will have appropriately themed levels to play in with all their unique hazards. The player can play as either Lightbulb Lad or Lightbulb Lass. There are six members in the party: Lady Lampest, the Watt brothers, Volt Vladamir, Ele, and Tricity. Lady Lampest has an extendable neck that allows the players to reach high up places in the level. The Watt brothers are useful in puzzles that require multiple buttons or levers to be pulled simultaneously. Volt Vladamir is an offensive character with the ability to shock enemies. Ele as a glide and soft fall ability which allows her to clear large gaps. Tricity is stout and fits easily under low doorways. There are the common enemies that are mice and insects. The mini bosses are the parrot, the fish, and the toy robot. The main villain is the lazy, but persistent, house cat (Sir Sniffysnoo).\n\nOn the PC the controls are the 'A' key for a special (switching between characters), 'Z' key to interact (press buttons and pick up objects), space bar to jump and the arrow buttons to move. An alternative PC control set up is the space bar for jumping, the left mouse clicker for interacting, the right mouse clicker for specials, and moving the mouse around to move. For the Nintendo Switch the left control stick is for moving, the 'L' button for specials, the 'A' button is to interact and the 'B' button to jump. For the PS4 controller, the left stick is to move, the left '1' button is for specials, the 'o' button is for jumping and the 'x' button for interacting. For an X-box 1 controller, the left stick is used to move, the left shoulder button is used for specials, the 'B' button is used for interacting and the 'A' button for jumping.\n\nThis game would most likely attract young children (of both genders) between the ages of 9-16 but can also attract an older audience. The cute and colourful characters emit a cheerful and energetic vibe and help to tell a compelling story. The gameplay will remind players of platformers such as Mario and Little Big Planet but the party component of the game (the ability to switch between characters with different abilities and strengths) will spice up the genre.",
+    "winner": false
+  },
+  {
+    "title": "Ocean Shift",
+    "platforms": [
+      "Mobile",
+      "Tablet"
+    ],
+    "authors": [
+      {
+        "name": "Abigail Tan",
+        "age": 16,
+        "city": "Brentwood"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "An isometric puzzle-strategy game where the player navigates the ocean of an alien planet by manipulating the terrain, learning about rocks and minerals along the way.",
+    "description": "After a failed space exploration experiment by a scientific research organisation, the player has crash-landed in the ocean of an alien planet and must explore the environment by navigating the ocean and creating paths by altering the terrain. Throughout the course of the game, they will discover information about rocks and minerals and eventually find out if there was ever life on the planet.\n\nThe game is an isometric turn-based puzzle-strategy game where the player must get their submersible to the goal to complete each level. Unlike in other strategy games, the player can alter and shift the terrain by moving units around on land and water. Units can move only on certain terrain types and can dig and build terrain to create paths for other units and allow a path to be cleared for the submersible.\n\nThere are no enemies or hazards; the only thing standing in the way of reaching the goal is the rocky terrain, which the submersible cannot travel through. It will require perceptive thinking and problem solving from the player to work out how to overcome the obstacles and clear a path to complete the objective.\n\nThe player interacts with the game using the phone or tablet touchscreen. To use a unit, they tap on it. This brings up the 'Move', 'Dig' and 'Build' buttons. The player taps one of these buttons to tell the unit what to do. Then the tiles that the unit can move to or dig/build are highlighted in red and the player taps a tile to do the action. The player can deselect a unit by tapping another one or anywhere else on the screen.\n\nThe 'End Turn' and 'Restart' buttons are just tapped to do that action.\n\nThe main target audience is teenagers aged 13-18 since the game is challenging but is also intuitive and easy to understand. It would be most suited for young people since it has a subtle educational aspect about rocks and minerals. However, this aspect is subtle so it wouldn't be off-putting for older audiences.\n\nThe game would also be ideal for people who want to play strategy games but don't have much time to spend on gaming. As my game is on mobile, it's easy to pick up and put down but can still be deep, interesting, and thought-provoking.",
+    "winner": false
+  },
+  {
+    "title": "Our Epiphany",
+    "platforms": [
+      "Desktop"
+    ],
+    "authors": [
+      {
+        "name": "Yue Qi",
+        "age": 15,
+        "city": "Coventry"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "Pretty lies hide behind a pretty guise and, just as that is so, the layers we unravel from someone's words can reach a much deeper level than what we typically expect.",
+    "description": "\"Our Epiphany\" follows two boys who bump into each other, and not just figuratively, in a busy street by sheer coincidence. The strong undercurrent of Maicha’s bubbling anger, combined with the shock and worry felt by Daichi causes everything around them to pause – literally. This unexpected surge of opposing emotions contorts their plane of reality, allowing them to see odd, ‘dandelion-like’ critters hovering around the stationary humans. Humans who are all frozen, except for the two protagonists.\n\nMuch of the aesthetics within the game will portray significant levels of colour, the varying spectrum is able to aid visual storytelling due to the emotions they can connote. The element of colour is primarily found within the fictional species of Mihua who serve as the main metaphor in this story. In earlier chapters, there will be a lack of Mihua surrounding the main characters but as the story progresses, they will become more understanding of their hearts - perhaps an increase in yellow ones when they are happy to have succeeded, or red ones when they discover their feelings for the other protagonist.\n\nSimilar to most other desktop-based games, \"Our Epiphany\" will use the keyboard to navigate throughout the game but would also be compatible with items such as controllers - which can be connected to the desktop device. General interaction within the game will use the spacebar and arrow keys. \n\nThe player will be able to choose between the two main characters to control for the portions of interactive gameplay, the other will be navigated automatically behind the player. There will also be an option for a second player to participate - the second player will control the other character not already in use.\n\nStorytelling games incorporate a broad audience, appropriate to how stories can be universal and perceived in many varied ways. In this particular case, the main audience of this game would be younger children around 7 years or older as the game carries the moral code of what many of us are told in our younger years – that words can hurt - yet we never fully learnt about the exact consequences. I do still believe the audience can be expanded to reach an older age group looking to experience a simple yet immersive little story with a twist on the aforementioned idea.\n\nMore games in recent years are trying to incorporate increased levels of an open-minded approach in design; whilst it is delightful to see this progress, the way topics are being touched upon seemed too forced for younger children to consume at an appropriate level. \"Our Epiphany\" will show messages and topics in a more passive way, not dulling down the importance of a subject but making it so that children can start to understand the things that may not often be explained at an adequate level. Topics like sexuality, race, disabilities and so on are often loudly emphasised in a game for diversity when they shouldn't be. These are normal things and should be presented as such, they shouldn't be the sole appeal of a game/narrative standpoint.",
+    "winner": false
+  },
+  {
+    "title": "Pax Hibernia",
+    "platforms": [
+      "Desktop"
+    ],
+    "authors": [
+      {
+        "name": "Rossa Smallman",
+        "age": 18,
+        "city": "Londonderry"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "15-18",
+    "quote": "A management & political strategy game based around the process of peace & reconciliation in Northern Ireland, the player must manage and ensure the balance of power within the 11 district areas in order to achieve some form of relative peace.",
+    "description": "Pax Hibernia allows players to explore the politics, culture, history, and people of Northern Ireland through a management and political strategy game the game will feature game-play systems designed to emphasise the importance of diversity and democratic values within politics. The player will have access to 6 cabinet ministers - each with their own unique character traits, expertise and relationships – who the player uses to create events, deal with issues, and consult on foreign relations. Each of these actions can impact daily life within Northern Ireland be it the economy, political opinion, or even national stability. \n\nEconomically, the player must manage a variety of different economic policies (such as tax, subsidisation, etc.) each of which affects the Expenditure and Debt of the country, High Debt/Expenditure can affect national stability and overall approval drastically, while the opposite can have beneficial effects. \n\nSocially, the player must manage a divided nation and can implement a variety of different social and policing policies (Irish Language, Festivals & Events, etc.) in order to appease either side. However, when dealing with these social issues bias must be taken into account, as any actions were taken against/for one side will dis/please the other.\n\nPolitically, the player cannot do anything deal with situations themselves; instead, they must assign a cabinet minister to deal with the issue. Each minister also has their own personalities that can affect their relationships with other ministers and therefore their ability to work with their peers.\n\nThe main screen of the game will feature a detailed district area map of Northern Ireland, with simplistic versions of the ROI, and UK which the player can interact with as appropriate.\n\nThe player will primarily use the mouse to click on different UI elements within the game, this includes: buttons, sliders, toggles, checkboxes, etc. However, the player can also use a variety of hotkeys to bring up a certain screen which may allow for further ease of use. For example, pressing \"Tab\" will open up the cabinet ministers screen, or the \"E\" key to bring up the GOI menu, each hotkey is designed around the typical \"WASD\" set-up.\n\nThe game uses story to a minimal degree (mostly only background information) as I found it to be much more effective to teach by using gameplay and stimulating kinaesthetic learning techniques and muscle memory in order to inform the player of the topic at hand. However, the game does include a rough backstory to contextualise the player's actions: the player is an administrative AI designed and implemented by the UN to manage a politically stagnant Northern Ireland in the lead-up to a No-Deal Brexit, this backstory explains why the player starts off in rough relations with both the UK and the ROI, not to mention the restructured government in place to accommodate a fictional first minister.\n\n\nDespite the focus on Northern Irish politics, the game is designed to simplify the topic by focusing on kinaesthetic learning and the potential of gameplay in education, so that the game can be understood by both younger and older players and those inside and outside of Northern Ireland.",
+    "winner": false
+  }
+]
