@@ -89,6 +89,11 @@ fn games(context: &mut Context, message: &Message, mut args: Args) -> CommandRes
                         return false;
                     }
                 },
+                "award" => {
+                    if !game.award.to_lowercase().contains(args.single_quoted::<String>().unwrap().to_lowercase().as_ref() as &str) {
+                        return false;
+                    }
+                },
                 _ => (),
             }
         }
