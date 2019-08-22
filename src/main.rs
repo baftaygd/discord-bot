@@ -128,6 +128,11 @@ fn games(context: &mut Context, message: &Message, mut args: Args) -> CommandRes
                         return false;
                     }
                 }
+                "winner" => {
+                    if game.winner != args.single_quoted::<bool>().unwrap() {
+                        return false;
+                    }
+                }
                 _ => (),
             }
         }
