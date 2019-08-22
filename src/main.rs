@@ -6,13 +6,21 @@ use serenity::{
     },
     model::channel::Message,
     prelude::*,
+    utils::MessageBuilder,
 };
+use std::fmt;
 
 #[derive(Deserialize)]
 struct Author {
     name: String,
     age: u8,
     city: String,
+}
+
+impl fmt::Debug for Author {
+    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
+        write!(formatter, "({}, {})", self.name, self.age)
+    }
 }
 
 #[derive(Deserialize)]
@@ -27,6 +35,18 @@ struct Game {
     quote: String,
     description: String,
     winner: bool,
+}
+
+impl fmt::Display for Game {
+    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
+        write!(
+            formatter,
+            "title: {}, author(s): {:?}, year: {}",
+            self.title,
+            self.authors.as_ref().unwrap_or(&Vec::<Author>::new()),
+            self.year
+        )
+    }
 }
 
 struct Games;
@@ -65,7 +85,7 @@ fn main() {
 #[command]
 fn games(context: &mut Context, message: &Message, mut args: Args) -> CommandResult {
     let data = context.data.read();
-    let mut games = data.get::<Games>().unwrap().iter().filter(|game| {
+    let games = data.get::<Games>().unwrap().iter().filter(|game| {
         args.restore();
         while !args.is_empty() {
             match args.single_quoted::<String>().unwrap().as_ref() {
@@ -73,7 +93,11 @@ fn games(context: &mut Context, message: &Message, mut args: Args) -> CommandRes
                     if let Some(authors) = &game.authors {
                         let search_author = args.single_quoted::<String>().unwrap().to_lowercase();
                         for (i, author) in authors.iter().enumerate() {
-                            if author.name.to_lowercase().contains(search_author.as_ref() as &str) {
+                            if author
+                                .name
+                                .to_lowercase()
+                                .contains(search_author.as_ref() as &str)
+                            {
                                 break;
                             }
                             if i == authors.len() - 1 {
@@ -83,30 +107,38 @@ fn games(context: &mut Context, message: &Message, mut args: Args) -> CommandRes
                     } else {
                         return false;
                     }
-                },
+                }
                 "title" => {
-                    if !game.title.to_lowercase().contains(args.single_quoted::<String>().unwrap().to_lowercase().as_ref() as &str) {
+                    if !game.title.to_lowercase().contains(
+                        args.single_quoted::<String>()
+                            .unwrap()
+                            .to_lowercase()
+                            .as_ref() as &str,
+                    ) {
                         return false;
                     }
-                },
+                }
                 "award" => {
-                    if !game.award.to_lowercase().contains(args.single_quoted::<String>().unwrap().to_lowercase().as_ref() as &str) {
+                    if !game.award.to_lowercase().contains(
+                        args.single_quoted::<String>()
+                            .unwrap()
+                            .to_lowercase()
+                            .as_ref() as &str,
+                    ) {
                         return false;
                     }
-                },
+                }
                 _ => (),
             }
         }
         return true;
     });
 
-    message.channel_id.say(
-        &context.http,
-        if let Some(game) = games.next() {
-            format!("Found game {}!!!", game.title)
-        } else {
-            "Couldn't find what you wanted :(".to_string()
-        },
-    )?;
+    let mut response = MessageBuilder::new();
+    for game in games {
+        response.push(game.to_string() + "\n");
+    }
+
+    message.channel_id.say(&context.http, &response)?;
     Ok(())
 }
