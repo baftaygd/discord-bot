@@ -140,9 +140,12 @@ fn games(context: &mut Context, message: &Message, mut args: Args) -> CommandRes
     });
 
     let mut response = MessageBuilder::new();
+    let mut n: usize = 0;
     for game in games {
         response.push(game.to_string() + "\n");
+        n += 1;
     }
+    response.push(format!("Matches {} games\n", n));
 
     message.channel_id.say(&context.http, &response)?;
     Ok(())
