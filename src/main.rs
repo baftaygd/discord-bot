@@ -10,6 +10,8 @@ use serenity::{
 };
 use std::fmt;
 
+#[macro_use] extern crate lazy_static;
+
 #[derive(Deserialize)]
 struct Author {
     name: String,
@@ -49,10 +51,8 @@ impl fmt::Display for Game {
     }
 }
 
-struct Games;
-
-impl TypeMapKey for Games {
-    type Value = Vec<Game>;
+lazy_static! {
+    static ref GAMES: Vec<Game> = serde_json::from_slice(include_bytes!("data/games.json")).unwrap();
 }
 
 struct Handler;
@@ -68,24 +68,15 @@ fn main() {
     let mut client = Client::new(&std::env::var("DISCORD_TOKEN").unwrap(), Handler).unwrap();
     client.with_framework(
         StandardFramework::new()
-            .configure(|configuration| configuration.prefix("!").delimiters(vec![" "]))
+            .configure(|configuration| configuration.prefix("!"))
             .group(&DEFAULT_GROUP),
     );
-    {
-        let file = std::fs::File::open("data/games.json").unwrap();
-        let reader = std::io::BufReader::new(file);
-        client
-            .data
-            .write()
-            .insert::<Games>(serde_json::from_reader(reader).unwrap());
-    }
     client.start().unwrap();
 }
 
 #[command]
 fn games(context: &mut Context, message: &Message, mut args: Args) -> CommandResult {
-    let data = context.data.read();
-    let games = data.get::<Games>().unwrap().iter().filter(|game| {
+    let games = GAMES.iter().filter(|game| {
         args.restore();
         while !args.is_empty() {
             match args.single_quoted::<String>().unwrap().as_ref() {
