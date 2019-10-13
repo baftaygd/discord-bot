@@ -1,6 +1,8 @@
 # discord-bot
 The discord bot for the BAFTA YGD Community server
 
+help please google cloud build jhaha trigger
+
 # TODO
 
 - [ ] Add games for 2019
