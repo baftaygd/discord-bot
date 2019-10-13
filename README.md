@@ -1,6 +1,8 @@
 # discord-bot
 The discord bot for the BAFTA YGD Community server
 
+edit to trigger build
+
 # TODO
 
 - [ ] Add games for 2019
