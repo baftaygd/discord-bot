@@ -14,6 +14,5 @@ RUN cargo build --release
 FROM debian:stable-slim
 
 COPY --from=builder ./target/release/discord-bot ./target/release/discord-bot
-COPY --from=builder ./data/games.json ./data/games.json
 
 CMD ["./target/release/discord-bot"]
