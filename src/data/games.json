@@ -691,5 +691,29 @@
     "quote": "An exciting game where the player treks through a maze of darkness on the perilous path to find home.",
     "description": "In this game, the player's selects a character and uses echolocation to find their way around in a set time. The game is set in a pitch-black screen and the only visible thing to the user is the face of their character, which is an outline of a person's face and the waves, which are both neon colours. The game begins with the player typing in their name in a box, which then shows up on their character's face. There are six different characters to choose from: a girl with a bun and a fringe, a boy with an afro, a girl with a hijab, a boy with a quiff, a girl with two buns and a boy with flat hair. Every time the character hits an object, they have to start the level again.\n\nThe aim of the game is to reach home. The player will have only one path to follow but they will not know that since they cannot see the path. The only way to know would be to use the waves to work out where the objects are. The larger and closer the waves the larger and closer the object. However, in for example, level ten there would be many obstacles and not enough time to wait and figure it out since there is a time limit. As the levels progress the player will have to manage their time, to allow the waves to return, but also have to make quick decisions and frequently send out sound waves.\n\nOn a PC, the user would use the arrow keys to move around and the space bar to project the sound waves while on a mobile device the player would drag the character along with their screen and double tap on the character to emit waves.\n\nThe target audience would be from seven to fifteen who are looking for fun but challenging games to play on their devices. However, Echo may be appealing to adults as well since it is a fun game to play on a journey or in their free time.",
     "winner": false
+  },
+  {
+    "title": "Escape Extinction",
+    "platforms": [
+      "Desktop"
+    ],
+    "authors": [
+      {
+        "name": "Annabel Davies",
+        "age": 13,
+        "city": "Lancashire"
+      },
+      {
+        "name": "Jessica Argall",
+        "age": 13,
+        "city": "Lancashire"
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "10-14",
+    "quote": "A fun, action-packed game which teaches you about saving animals through exciting mini-games, creating a scrapbook of wonderful pictures of animals you've saved as you play.",
+    "description": "The player designs their custom-built avatar who explores the world map finding endangered animals to save. Each level is a new animal and they have to complete a series of mini-games and challenges to increase the number of that animal left in our world. Once the level is high enough you will get a cute picture of that animal to stick in your very-own scrapbook, building memories of your amazing work saving our planet. The mini-games are familiar in style but with our unique twist - they are themed around your animal. Think transporting supplies across a desert, sliding penguins to find food and much more!\n\nOur game is set on our Earth. You play as a conservationist with a customizable appearance. You can change their skin colour, hair colour and style, gender and much more. There is a map of each place you visit that you can explore and find fun mini-games to boost the numbers of animals. There are many adorable animals to find and play with. As shown in the artwork, the games has a predominately cartoon style. Your avatar, the mini-games and the logo are all cute and simplistic. However, the scrapbook has more realistic looking pictures to give the impression of actual photos that have been taken in the field. The simplistic style should appeal to younger players who could use the game to learn about saving animals and looking after the earth.\n\nOur game uses different controls for each mini-game. In the mini-game, it will tell you the controls before you start playing. For example, when you have to transport supplies across the desert you use the up and down arrows to switch lanes and avoid obstacles. However, when throwing the bananas into monkeys’ mouths, you will use the mouse. For exploring the map, you use the mouse the move across the map and click on the mini game locations and you scroll to zoom in and out.\n\nI think our target audience is predominately children aged 8-14 although I think it could appeal to any age. The bright colours and fun mini-games make it more appealing to younger players although the deeper meaning about conserving our planet and saving animals.",
+    "winner": false
   }
 ]
