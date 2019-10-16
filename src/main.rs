@@ -16,7 +16,7 @@ use std::fmt;
 struct Author {
     name: String,
     age: u8,
-    city: String,
+    city: Option<String>,
 }
 
 impl fmt::Debug for Author {
