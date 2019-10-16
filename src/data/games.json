@@ -715,5 +715,27 @@
     "quote": "A fun, action-packed game which teaches you about saving animals through exciting mini-games, creating a scrapbook of wonderful pictures of animals you've saved as you play.",
     "description": "The player designs their custom-built avatar who explores the world map finding endangered animals to save. Each level is a new animal and they have to complete a series of mini-games and challenges to increase the number of that animal left in our world. Once the level is high enough you will get a cute picture of that animal to stick in your very-own scrapbook, building memories of your amazing work saving our planet. The mini-games are familiar in style but with our unique twist - they are themed around your animal. Think transporting supplies across a desert, sliding penguins to find food and much more!\n\nOur game is set on our Earth. You play as a conservationist with a customizable appearance. You can change their skin colour, hair colour and style, gender and much more. There is a map of each place you visit that you can explore and find fun mini-games to boost the numbers of animals. There are many adorable animals to find and play with. As shown in the artwork, the games has a predominately cartoon style. Your avatar, the mini-games and the logo are all cute and simplistic. However, the scrapbook has more realistic looking pictures to give the impression of actual photos that have been taken in the field. The simplistic style should appeal to younger players who could use the game to learn about saving animals and looking after the earth.\n\nOur game uses different controls for each mini-game. In the mini-game, it will tell you the controls before you start playing. For example, when you have to transport supplies across the desert you use the up and down arrows to switch lanes and avoid obstacles. However, when throwing the bananas into monkeys’ mouths, you will use the mouse. For exploring the map, you use the mouse the move across the map and click on the mini game locations and you scroll to zoom in and out.\n\nI think our target audience is predominately children aged 8-14 although I think it could appeal to any age. The bright colours and fun mini-games make it more appealing to younger players although the deeper meaning about conserving our planet and saving animals.",
     "winner": false
+  },
+  {
+    "title": "Escaping Giza",
+    "platforms": [
+      "Desktop"
+    ],
+    "authors": [
+      {
+        "name": "Shreeya Srivastava",
+        "age": 14,
+      },
+      {
+        "name": "Divya Sundararajan",
+        "age": 14,
+      }
+    ],
+    "year": 2019,
+    "award": "Game Concept",
+    "group": "10-14",
+    "quote": "Escaping Giza is a fun 2 player desktop game set in Ancient Egyptians for children over 6; the game includes finding hidden objects, using secret powers and escaping the mummies, all while trying to get to the exit.",
+    "description": "The game is set in a pyramid in Ancient Egypt with 15 levels. The aim of the game is the two players have to work together to get to the gateway and collect the amulet piece and the special item on each level, without being caught by the mummies. Player A levels are different compared to Player B’s but both are of the same difficulty. At the bottom of their screen, they will have an inventory of the items they need for the last 3 levels, and once they are collected it will be ticked off. On the last 3 levels, they both play on the same platform and work together to try and escape the room using the items they have collected. In the corner of their screen, they will have a message box, where they can communicate with the other player, telling them where they are or if they have got their item yet.\n\nThe 2 characters are small and cute with customisable colours which they can choose from at the beginning of the game. One character has elements inspired from a fox and the other inspired from a hawk, both about the same size, but they are gender neutral, so there are more choices in character. The mummies have red eyes and are basically covered in bandages some of them hanging loose, and when moving around they have their arms outstretched and walk robotically. The end of the game is a setting of them seeing outside the pyramid against in a sunset as a silhouette, with a title saying “You Have Escaped” and asking them if they would like to play again.\n\nThe controls for our game will be the arrow keys and WASD. Player 1 will use the arrows and Player 2 will use WASD. They can use the spacebar for the gravity manipulation, where the object in the way would become highlighted, when the player is close and then would move up or down in accordance to if your player 1 or 2. To hide behind a vase you must be directly in front of it and click it with your mouse, click once more when it’s safe to go.\n\nThe target audience for our game is 6-12 years old. We feel that this is appropriate because most children that age will be engaged video games but where they would like to play with their friends. This game is not violent yet it has elements of adventure and fast-paced thinking, which children that age will like.",
+    "winner": false
   }
 ]
