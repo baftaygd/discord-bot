@@ -1,0 +1,28 @@
+name: Docker
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+env:
+  IMAGE_LOCATION: "${{ secrets.DOCKER_USERNAME }}/$IMAGE_NAME:latest"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run tests
+        run: docker build .
+  push:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build image
+        run: docker build --tag "$IMAGE_LOCATION" .
+      - name: Log into registry
+        run: docker login -u ${{ github.actor }} --password-stdin <<< "${{ secrets.DOCKER_PASSWORD }}"
+      - name: Push image
+        run: |
+          docker push "$IMAGE_LOCATION"
