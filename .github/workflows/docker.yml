@@ -1,0 +1,21 @@
+name: Docker
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+env:
+  IMAGE_LOCATION: "${{ secrets.DOCKER_USERNAME }}/ygd-discord-bot:latest"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run tests
+        run: docker build --tag "$IMAGE_LOCATION" .
+      - name: Log into registry
+        run: docker login --username="${{ secrets.DOCKER_USERNAME }}" --password="${{ secrets.DOCKER_PASSWORD }}"
+        if: github.event_name == 'push'
+      - name: Push image
+        run: docker push "$IMAGE_LOCATION"
+        if: github.event_name == 'push'
