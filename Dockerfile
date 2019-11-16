@@ -1,23 +1,19 @@
-FROM rust:1-slim as builder
-
-RUN apt update
-RUN apt install -y musl-tools
-RUN rustup target add x86_64-unknown-linux-musl
+FROM ekidd/rust-musl-builder:stable as builder
 
 COPY ./Cargo.toml ./Cargo.lock ./
 RUN mkdir src/
 RUN echo "fn main() { }" > src/main.rs
-RUN cargo build --release --target x86_64-unknown-linux-musl
+RUN cargo build --release
 
 RUN rm ./target/x86_64-unknown-linux-musl/release/deps/discord_bot*
 
 COPY . .
 
-RUN cargo build --release --target x86_64-unknown-linux-musl
+RUN cargo build --release
 RUN strip ./target/x86_64-unknown-linux-musl/release/discord-bot
 
 FROM scratch
 
-COPY --from=builder ./target/x86_64-unknown-linux-musl/release/discord-bot ./discord-bot
+COPY --from=builder /home/rust/src/target/x86_64-unknown-linux-musl/release/discord-bot ./discord-bot
 
 CMD ["./discord-bot"]
