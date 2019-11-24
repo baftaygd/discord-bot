@@ -1,4 +1,6 @@
-use serde::Deserialize;
+#![feature(proc_macro_hygiene)]
+extern crate compile_time_serde;
+
 use serenity::{
     framework::standard::{
         macros::{command, group},
@@ -10,13 +12,10 @@ use serenity::{
 };
 use std::fmt;
 
-#[macro_use] extern crate lazy_static;
-
-#[derive(Deserialize)]
 struct Author {
-    name: String,
+    name: &'static str,
     age: u8,
-    city: Option<String>,
+    city: Option<&'static str>,
 }
 
 impl fmt::Debug for Author {
@@ -25,17 +24,16 @@ impl fmt::Debug for Author {
     }
 }
 
-#[derive(Deserialize)]
 struct Game {
-    title: String,
-    tools: Option<Vec<String>>,
-    platforms: Option<Vec<String>>,
+    title: &'static str,
+    tools: Option<Vec<&'static str>>, // TODO: maybe use an enum for this
+    platforms: Option<Vec<&'static str>>, // TODO: maybe use an enum for this
     authors: Option<Vec<Author>>,
     year: i32,
-    award: String,
-    group: String,
-    quote: String,
-    description: String,
+    award: &'static str,
+    group: &'static str,
+    quote: &'static str,
+    description: &'static str,
     winner: bool,
 }
 
@@ -51,8 +49,11 @@ impl fmt::Display for Game {
     }
 }
 
+#[macro_use]
+extern crate lazy_static;
+
 lazy_static! {
-    static ref GAMES: Vec<Game> = serde_json::from_slice(include_bytes!("data/games.json")).unwrap();
+    static ref GAMES: Vec<Game> = compile_time_serde::deserialize_json!();
 }
 
 struct Handler;
