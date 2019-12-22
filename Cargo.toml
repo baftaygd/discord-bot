@@ -6,7 +6,7 @@ edition = "2018"
 
 [dependencies]
 serenity = "0.7"
-lazy_static = "1"
+staticvec = "0.7"
 
 compile_time_serde = { path = "compile_time_serde" }
 

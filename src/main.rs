@@ -26,9 +26,9 @@ impl fmt::Debug for Author {
 
 struct Game {
     title: &'static str,
-    tools: Option<Vec<&'static str>>, // TODO: maybe use an enum for this
-    platforms: Option<Vec<&'static str>>, // TODO: maybe use an enum for this
-    authors: Option<Vec<Author>>,
+    tools: Option<staticvec::StaticVec<&'static str>>, // TODO: maybe use an enum for this
+    platforms: Option<staticvec::StaticVec<&'static str>>, // TODO: maybe use an enum for this
+    authors: Option<staticvec::StaticVec<Author>>,
     year: i32,
     award: &'static str,
     group: &'static str,
@@ -49,12 +49,7 @@ impl fmt::Display for Game {
     }
 }
 
-#[macro_use]
-extern crate lazy_static;
-
-lazy_static! {
-    static ref GAMES: Vec<Game> = compile_time_serde::deserialize_json!();
-}
+const GAMES: staticvec::StaticVec<Game> = compile_time_serde::deserialize_json!();
 
 struct Handler;
 

@@ -29,7 +29,7 @@ pub fn deserialize_json(_item: TokenStream) -> TokenStream {
     let games: Vec<Game> = serde_json::from_slice(include_bytes!("data/games.json")).unwrap();
 
     format!("{:#?}", games)
-        .replace("[", "std::vec![")
+        .replace("[", "staticvec::staticvec![")
         .parse()
         .unwrap()
 }
