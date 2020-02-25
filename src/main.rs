@@ -10,7 +10,8 @@ use serenity::{
 };
 use std::fmt;
 
-#[macro_use] extern crate lazy_static;
+#[macro_use]
+extern crate lazy_static;
 
 #[derive(Deserialize)]
 struct Author {
@@ -52,17 +53,17 @@ impl fmt::Display for Game {
 }
 
 lazy_static! {
-    static ref GAMES: Vec<Game> = serde_json::from_slice(include_bytes!("data/games.json")).unwrap();
+    static ref GAMES: Vec<Game> =
+        serde_json::from_slice(include_bytes!("data/games.json")).unwrap();
 }
 
 struct Handler;
 
 impl EventHandler for Handler {}
 
-group!({
-    name: "default",
-    commands: [games],
-});
+#[group]
+#[commands(games)]
+struct Default;
 
 fn main() {
     let mut client = Client::new(&std::env::var("DISCORD_TOKEN").unwrap(), Handler).unwrap();
