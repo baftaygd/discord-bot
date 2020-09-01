@@ -99,7 +99,7 @@ dependencies = [
  "num-integer 0.1.43 (registry+https://github.com/rust-lang/crates.io-index)",
  "num-traits 0.2.11 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.110 (registry+https://github.com/rust-lang/crates.io-index)",
- "time 0.1.43 (registry+https://github.com/rust-lang/crates.io-index)",
+ "time 0.1.44 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -355,7 +355,7 @@ dependencies = [
  "itoa 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "pin-project 0.4.23 (registry+https://github.com/rust-lang/crates.io-index)",
  "socket2 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
- "time 0.1.43 (registry+https://github.com/rust-lang/crates.io-index)",
+ "time 0.1.44 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio 0.2.21 (registry+https://github.com/rust-lang/crates.io-index)",
  "tower-service 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "tracing 0.1.18 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -945,10 +945,11 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.1.43"
+version = "0.1.44"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "libc 0.2.74 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wasi 0.10.0+wasi-snapshot-preview1 (registry+https://github.com/rust-lang/crates.io-index)",
  "winapi 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -1141,6 +1142,11 @@ dependencies = [
 [[package]]
 name = "wasi"
 version = "0.9.0+wasi-snapshot-preview1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "wasi"
+version = "0.10.0+wasi-snapshot-preview1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
@@ -1396,7 +1402,7 @@ dependencies = [
 "checksum static_assertions 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
 "checksum syn 1.0.33 (registry+https://github.com/rust-lang/crates.io-index)" = "e8d5d96e8cbb005d6959f119f773bfaebb5684296108fb32600c00cde305b2cd"
 "checksum threadpool 1.8.1 (registry+https://github.com/rust-lang/crates.io-index)" = "d050e60b33d41c19108b32cea32164033a9013fe3b46cbd4457559bfbf77afaa"
-"checksum time 0.1.43 (registry+https://github.com/rust-lang/crates.io-index)" = "ca8a50ef2360fbd1eeb0ecd46795a87a19024eb4b53c5dc916ca1fd95fe62438"
+"checksum time 0.1.44 (registry+https://github.com/rust-lang/crates.io-index)" = "6db9e6914ab8b1ae1c260a4ae7a49b6c5611b40328a735b21862567685e73255"
 "checksum tinyvec 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)" = "53953d2d3a5ad81d9f844a32f14ebb121f50b650cd59d0ee2a07cf13c617efed"
 "checksum tokio 0.2.21 (registry+https://github.com/rust-lang/crates.io-index)" = "d099fa27b9702bed751524694adbe393e18b36b204da91eb1cbbbbb4a5ee2d58"
 "checksum tokio-rustls 0.13.1 (registry+https://github.com/rust-lang/crates.io-index)" = "15cb62a0d2770787abc96e99c1cd98fcf17f94959f3af63ca85bdfb203f051b4"
@@ -1420,6 +1426,7 @@ dependencies = [
 "checksum uwl 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "f4bf03e0ca70d626ecc4ba6b0763b934b6f2976e8c744088bb3c1d646fbb1ad0"
 "checksum version_check 0.9.2 (registry+https://github.com/rust-lang/crates.io-index)" = "b5a972e5669d67ba988ce3dc826706fb0a8b01471c088cb0b6110b805cc36aed"
 "checksum want 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "1ce8a968cb1cd110d136ff8b819a556d6fb6d919363c61534f6860c7eb172ba0"
+"checksum wasi 0.10.0+wasi-snapshot-preview1 (registry+https://github.com/rust-lang/crates.io-index)" = "1a143597ca7c7793eff794def352d41792a93c481eb1042423ff7ff72ba2c31f"
 "checksum wasi 0.9.0+wasi-snapshot-preview1 (registry+https://github.com/rust-lang/crates.io-index)" = "cccddf32554fecc6acb585f82a32a72e28b48f8c4c1883ddfeeeaa96f7d8e519"
 "checksum wasm-bindgen 0.2.67 (registry+https://github.com/rust-lang/crates.io-index)" = "f0563a9a4b071746dd5aedbc3a28c6fe9be4586fb3fbadb67c400d4f53c6b16c"
 "checksum wasm-bindgen-backend 0.2.67 (registry+https://github.com/rust-lang/crates.io-index)" = "bc71e4c5efa60fb9e74160e89b93353bc24059999c0ae0fb03affc39770310b0"
